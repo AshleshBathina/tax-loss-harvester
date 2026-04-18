@@ -6,18 +6,6 @@ A responsive React application for **Tax Loss Harvesting**, built as part of the
 
 ---
 
-## Screenshots
-
-![App Overview](./client/src/assets/Screenshot%20(220).png)
-
-![Capital Gains Cards](./client/src/assets/Screenshot_18-4-2026_131346_tax-loss-harvester-black.vercel.app.jpeg)
-
-![Holdings Table](./client/src/assets/Screenshot_18-4-2026_131432_tax-loss-harvester-black.vercel.app.jpeg)
-
-![Mobile / Responsive View](./client/src/assets/Screenshot_18-4-2026_131526_tax-loss-harvester-black.vercel.app.jpeg)
-
----
-
 ## Getting Started
 
 ```bash
@@ -86,6 +74,18 @@ client/
     ├── App.css                   # Page layout & global styles
     └── index.css                 # CSS reset + font import
 ```
+
+---
+
+## Screenshots
+
+![App Overview](./client/src/assets/Screenshot%20(220).png)
+
+![Capital Gains Cards](./client/src/assets/Screenshot_18-4-2026_131346_tax-loss-harvester-black.vercel.app.jpeg)
+
+![Holdings Table](./client/src/assets/Screenshot_18-4-2026_131432_tax-loss-harvester-black.vercel.app.jpeg)
+
+![Mobile / Responsive View](./client/src/assets/Screenshot_18-4-2026_131526_tax-loss-harvester-black.vercel.app.jpeg)
 
 ---
 

@@ -1,0 +1,49 @@
+.header {
+  background: #fff;
+  border-bottom: 1px solid #e8ecf0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.logo-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.logo-koin {
+  color: #0052FE;
+}
+
+.logo-x {
+  color: #0052FE;
+}
+
+.logo-dot {
+  color: #F7941D;
+  font-size: 8px;
+  margin-left: 1px;
+  margin-bottom: 12px;
+}
+
+.logox {
+  width: 85px;
+}

@@ -1,0 +1,310 @@
+.holdings-card {
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #e4eaf0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+  overflow: hidden;
+}
+
+.holdings-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 20px 0;
+}
+
+/* Table Wrapper for horizontal scroll on mobile */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.holdings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+  min-width: 700px;
+}
+
+/* Header */
+.holdings-table thead tr {
+  border-bottom: 2px solid #f0f3f8;
+}
+
+.holdings-table th {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  text-align: right;
+  padding: 0 12px 12px 12px;
+  white-space: nowrap;
+}
+
+.holdings-table th.th-check {
+  text-align: center;
+  width: 40px;
+  padding-left: 0;
+}
+
+.holdings-table th.th-asset {
+  text-align: left;
+  min-width: 160px;
+}
+
+.holdings-table th.th-holdings {
+  display: table-cell;
+}
+
+.th-holdings {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  padding-bottom: 10px;
+}
+
+.sub-heading {
+  font-size: 11px;
+  color: #aaa;
+  font-weight: 400;
+}
+
+/* Rows */
+.holding-row {
+  border-bottom: 1px solid #f5f7fb;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.holding-row:hover {
+  background: #f8faff;
+}
+
+.holding-row.selected {
+  background: #eef4ff;
+  border-left: 3px solid #1a6ee4;
+}
+
+.holdings-table td {
+  padding: 14px 12px;
+  vertical-align: middle;
+}
+
+.td-check {
+  text-align: center;
+  width: 40px;
+  padding-left: 4px !important;
+}
+
+.td-asset {
+  text-align: left;
+}
+
+.td-right {
+  text-align: right;
+}
+
+/* Checkbox */
+.row-checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  accent-color: #1a6ee4;
+  border-radius: 3px;
+}
+
+/* Asset info */
+.asset-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.coin-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid #eee;
+}
+
+.coin-placeholder {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.asset-names {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.asset-coin {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.asset-symbol {
+  font-size: 11px;
+  color: #888;
+  font-weight: 500;
+}
+
+/* Holdings amount */
+.holding-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.holding-total {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.holding-price {
+  font-size: 11px;
+  color: #888;
+}
+
+/* Current price */
+.current-price {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+/* Gain cells */
+.gain-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.gain-value {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.gain-value.positive {
+  color: #16a34a;
+}
+
+.gain-value.negative {
+  color: #e63946;
+}
+
+.gain-balance {
+  font-size: 11px;
+  color: #888;
+}
+
+/* Amount to sell */
+.amount-to-sell {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a6ee4;
+  background: #e8f0fe;
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.no-value {
+  color: #ccc;
+  font-size: 14px;
+}
+
+/* View All Button */
+.view-all-btn {
+  display: block;
+  margin: 18px auto 4px;
+  background: none;
+  border: none;
+  color: #1a6ee4;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 16px;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.view-all-btn:hover {
+  background: #f0f5ff;
+}
+
+/* Skeleton for loading */
+.holdings-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skeleton-row-full {
+  height: 56px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -200% 0;
+  }
+
+  to {
+    background-position: 200% 0;
+  }
+}
+
+/* Responsive - hide some columns on mobile */
+@media (max-width: 768px) {
+  .holdings-card {
+    padding: 16px;
+  }
+
+  .table-wrapper {
+    margin: 0 -16px;
+    padding: 0 16px;
+  }
+
+  .holdings-title {
+    font-size: 16px;
+    margin-bottom: 14px;
+  }
+
+  .th-current-price,
+  .th-amount,
+  .th-ltcg {
+    display: none;
+  }
+
+  .holding-row td:nth-child(5),
+  .holding-row td:nth-child(7) {
+    display: none;
+  }
+}

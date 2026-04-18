@@ -1,0 +1,239 @@
+/* ===== Shared Card Base Styles ===== */
+.card {
+  border-radius: 14px;
+  padding: 24px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* ===== Pre Harvesting Card ===== */
+.pre-harvesting-card {
+  background: #fff;
+  border: 1px solid #e4eaf0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== After Harvesting Card ===== */
+.after-harvesting-card {
+  background: linear-gradient(135deg, #1a6ee4 0%, #1557c7 100%);
+  box-shadow: 0 4px 20px rgba(26, 110, 228, 0.3);
+}
+
+/* ===== Card Title ===== */
+.card-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 20px 0;
+}
+
+.card-title.white {
+  color: #fff;
+}
+
+/* ===== Gains Table ===== */
+.gains-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+}
+
+.gains-table th {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+  text-align: right;
+  padding-bottom: 8px;
+}
+
+.gains-table th:first-child {
+  text-align: left;
+}
+
+.gains-table td {
+  font-size: 14px;
+  color: #2c2c3e;
+  text-align: right;
+  padding: 6px 0;
+}
+
+.gains-table td:first-child {
+  text-align: left;
+  color: #555;
+}
+
+.gains-table.white th {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.gains-table.white td {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.gains-table.white td:first-child {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ===== Net Row ===== */
+.net-row td {
+  font-weight: 600;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.after-harvesting-card .net-row td {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Loss value ===== */
+.loss-value {
+  color: #e63946 !important;
+}
+
+.loss-value-dark {
+  color: rgba(255, 200, 200, 1) !important;
+}
+
+/* ===== Bold ===== */
+.bold {
+  font-weight: 700;
+}
+
+/* ===== Realised Gains Row ===== */
+.realised-gains-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 2px solid #eee;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.white-border {
+  border-top-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.realised-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+}
+
+.after-harvesting-card .realised-label {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 700;
+}
+
+.realised-value {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1a1a2e;
+  font-family: 'Inter', sans-serif;
+}
+
+.realised-value.large {
+  font-size: 26px;
+  color: #fff;
+}
+
+.realised-value.large.negative {
+  color: #ffcdd2;
+}
+
+/* ===== Savings Banner ===== */
+.savings-banner {
+  margin-top: 14px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  animation: popIn 0.3s ease;
+}
+
+.savings-emoji {
+  font-size: 18px;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===== Skeleton Loader ===== */
+.card-loader {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  border-radius: 6px;
+  animation: shimmer 1.4s infinite;
+}
+
+.skeleton.dark {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 25%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.15) 75%);
+  background-size: 200% 100%;
+}
+
+.skeleton-title {
+  height: 22px;
+  width: 50%;
+}
+
+.skeleton-row {
+  height: 16px;
+}
+
+.skeleton-total {
+  height: 30px;
+  width: 70%;
+  margin-top: 8px;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: -200% 0;
+  }
+
+  to {
+    background-position: 200% 0;
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .card {
+    padding: 18px 16px;
+  }
+
+  .realised-value {
+    font-size: 18px;
+  }
+
+  .realised-value.large {
+    font-size: 22px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+}
